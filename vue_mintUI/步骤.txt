@@ -1,0 +1,23 @@
+1 cnpm install vue-cli -g
+2 vue init webpack-simple project name
+3 cnpm install
+4 cnpm install style-loader -D
+5 cnpm install mint-ui -D
+6 main.js  ÒıÈë
+
+
+import Vue from 'vue'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+import App from './App.vue'
+
+Vue.use(MintUI)
+
+new Vue({
+  el: '#app',
+  components: { App }
+}) 
+
+7webpackconfig
+Ìí¼Ó
+css-loader!style-loader
